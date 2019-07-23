@@ -42,6 +42,7 @@ const images = {
   condeNastLogo: require("../assets/logos/Conde_Nast_logo.svg"),
   pusherLogo: require("../assets/logos/pusher_logo_white.png"),
   nearSTLogo: require('../assets/logos/nearST.svg'),
+  reactAdvanced: require('../assets/logos/react.svg'),
   pusherPromo: require("../assets/announcements/Pusher_promo.jpg"),
   cityJsLogo: require("../assets/logos/cityJSConf.jpg"),
   nexmoslide: require("../assets/announcements/Nexmo_LNUG.001.png"),
@@ -209,6 +210,11 @@ export default class Presentation extends React.Component {
 
         <Slide id={"pusher-promo"}>
           <Image src={images.pusherPromo} margin="0px auto 40px" width="100%" />
+        </Slide>
+
+        <Slide id={"react"}>
+          <Heading size={5} textColor="highlight">Event - Call for Papers</Heading>
+          <Image src={images.reactAdvanced} margin="40px auto 40px" width="400px" />
         </Slide>
 
         <SummarySlide id="ready"/>
