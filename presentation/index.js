@@ -41,6 +41,7 @@ const images = {
   nearFormLogo: require("../assets/logos/NF__Primary_Logo_Reversed_Horizontal.svg"),
   condeNastLogo: require("../assets/logos/Conde_Nast_logo.svg"),
   pusherLogo: require("../assets/logos/pusher_logo_white.png"),
+  nearSTLogo: require('../assets/logos/nearST.svg'),
   pusherPromo: require("../assets/announcements/Pusher_promo.jpg"),
   cityJsLogo: require("../assets/logos/cityJSConf.jpg"),
   nexmoslide: require("../assets/announcements/Nexmo_LNUG.001.png"),
@@ -51,42 +52,42 @@ const images = {
 };
 
 const emcee = {
-  name: "Matt",
-  twitter: "_mattleach"
+  name: "Thomas Ankcorn",
+  twitter: "thomasankcorn"
 };
 
 
 // get this from the latest from https://github.com/lnug/website/blob/master/data/this-month.json and add twitter details if desired
 const speakers = [
   {
-    name: "Simon Birchall",
-    url: "https://github.com/SBirchall818",
-    title: "Bootstrapping a startup with SailsJS"
+    name: "James Porter",
+    url: "https://github.com/jamesporter",
+    title: "Create your own state management library"
   },
   {
-    name: "Colin Eberhardt",
-    url: "https://github.com/ColinEberhardt",
-    title: "Build your own WebAssembly Compiler"
+    name: "Maximilian Berkmann",
+    url: "https://github.com/Berkmann18",
+    title: "Using ML in NodeJS"
   }
 ]
 ;
 
 const thisMonth = {
-  title: "#83- April 2019"
+  title: "#86 - July 2019"
 };
 
 const nextMonth = {
-  date: "22nd May 2019",
+  date: "28th August 2019",
 
   speakers: [
     {
-      name: "Chinrank",
-      title: "Native implementation of curl in node"
+      name: "Thomas Ankcorn",
+      title: "Indie Hacking with Postgraphile"
+    },
+    {
+      name: "Forbes Lindesay",
+      title: "Security in Node.js"
     }
-    // {
-    //   name: "Mike Solomon",
-    //   title: "Testing apps with third-party API integrations"
-    // }
   ]
 };
 
@@ -195,6 +196,12 @@ export default class Presentation extends React.Component {
           <Image src={images.nearFormLogo} margin="0px auto 40px" height="293px" padding="10px" />
         </Slide>
 
+        <Slide id={"ice-cream"}>
+          <Heading size={5} textColor="highlight">Ice Cream</Heading>
+          <Image src={images.nearSTLogo} margin="40px auto 40px" width="400px" />
+        </Slide>
+
+      
         <Slide id={"video-production"}>
           <Heading size={5} textColor="highlight">Video</Heading>
           <Image src={images.pusherLogo} margin="0px auto 40px" width="800px" />
@@ -202,13 +209,6 @@ export default class Presentation extends React.Component {
 
         <Slide id={"pusher-promo"}>
           <Image src={images.pusherPromo} margin="0px auto 40px" width="100%" />
-        </Slide>
-
-        <Slide id={"cityJS-promo"}>
-          <Heading size={5} textColor="highlight">community</Heading>
-          <Heading size={3} textColor="secondary" >CityJsConf 2019</Heading>
-          <Text textColor="secondary" italic margin={20}>cityJSConf.org</Text>
-          <Image src={images.cityJsLogo} margin="0px auto 40px" width="200px" />
         </Slide>
 
         <SummarySlide id="ready"/>
@@ -277,6 +277,7 @@ export default class Presentation extends React.Component {
             <Image src={images.condeNastLogo} margin="10" height="60"/>
             <Image src={images.pusherLogo} margin="10" height="80"/>
             <Image src={images.nearFormLogo} margin="10" height="80" />
+            <Image src={images.nearSTLogo} margin="10" height="80" />
           </div>
         </Slide>
 
