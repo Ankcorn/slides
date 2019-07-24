@@ -163,6 +163,13 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
 
+        <Slide id={"heat"}>
+          <Heading size={3} lineHeight={3} textColor="secondary"> 🌞 It's very Hot! 🌞</Heading>
+          <Appear><Heading size={5} textColor="secondary">💦 Stay Hydrated </Heading></Appear>
+          <Appear><Heading size={5} textColor="secondary">🍦 Be cool </Heading></Appear>
+          <Appear><Heading size={5} textColor="secondary">🧚🏽‍♂️ Help each other </Heading></Appear>
+        </Slide>
+
         <Slide id={"hashtags"}>
           <Heading size={5} textColor="secondary">Tweet</Heading>
           <Heading size={2} textColor="highlight">@lnugORG</Heading>
@@ -198,7 +205,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide id={"ice-cream"}>
-          <Heading size={5} textColor="highlight">Ice Cream</Heading>
+          <Heading size={5} textColor="highlight">🍦 Ice Cream 🍦</Heading>
           <Image src={images.nearSTLogo} margin="40px auto 40px" width="400px" />
         </Slide>
 
