@@ -41,8 +41,8 @@ const images = {
   nearFormLogo: require("../assets/logos/NF__Primary_Logo_Reversed_Horizontal.svg"),
   condeNastLogo: require("../assets/logos/Conde_Nast_logo.svg"),
   pusherLogo: require("../assets/logos/pusher_logo_white.png"),
-  nearSTLogo: require('../assets/logos/nearST.svg'),
-  reactAdvanced: require('../assets/logos/react.svg'),
+  nearSTLogo: require("../assets/logos/nearST.svg"),
+  reactAdvanced: require("../assets/logos/react.svg"),
   pusherPromo: require("../assets/announcements/Pusher_promo.jpg"),
   cityJsLogo: require("../assets/logos/cityJSConf.jpg"),
   nexmoslide: require("../assets/announcements/Nexmo_LNUG.001.png"),
@@ -68,7 +68,7 @@ const speakers = [
   {
     name: "Maximilian Berkmann",
     url: "https://github.com/Berkmann18",
-    title: "Using ML in NodeJS"
+    title: "Using Machine Learning in NodeJS"
   }
 ]
 ;
@@ -209,7 +209,7 @@ export default class Presentation extends React.Component {
           <Image src={images.nearSTLogo} margin="40px auto 40px" width="400px" />
         </Slide>
 
-      
+
         <Slide id={"video-production"}>
           <Heading size={5} textColor="highlight">Video</Heading>
           <Image src={images.pusherLogo} margin="0px auto 40px" width="800px" />
